@@ -1,3 +1,4 @@
+
 public class Assignment6 {
     Assignment6(){
         new Assignment6("");

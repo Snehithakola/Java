@@ -5,9 +5,10 @@ import java.util.Set;
 public class Assignment2 {
     static boolean check(String input){
         Set<Character> set=new HashSet<>();
+        input=input.toLowerCase();
         for(int index=0;index<input.length();index++){
-            if(input.charAt(index)>='a' && input.charAt(index)<='z'){
-                set.add(input.charAt(index));
+            if((input.charAt(index)>='a' && input.charAt(index)<='z')||(input.charAt(index)>='A' && input.charAt(index)<='Z')){
+                set.add(Character.toLowerCase(input.charAt(index)));
             }
         }
         if(set.size()!=26)

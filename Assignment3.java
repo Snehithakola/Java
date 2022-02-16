@@ -10,6 +10,7 @@ public class Assignment3 {
             BufferedReader inputStream = new BufferedReader(new InputStreamReader(p.getInputStream()));
 
             String s = "";
+            // reading output stream of the command
             while ((s = inputStream.readLine()) != null) {
                 System.out.println(s);
             }
@@ -26,5 +27,7 @@ public class Assignment3 {
         System.out.println("Enter the ip address : ");
         ip =in.nextLine();
         runSystemCommand("ping " + ip);
+
+
     }
 }
